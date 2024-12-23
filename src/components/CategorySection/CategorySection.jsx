@@ -33,7 +33,7 @@ const CategorySection = () => {
   return (
     <div id="section1" className="py-20 flex justify-center">
       <div className="w-11/12 lg:w-3/4">
-        <h2 className="pb-10 text-center font-forum text-6xl">
+        <h2 className="pb-10 text-center font-forum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           Best Salad Menu
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -11,11 +11,11 @@ const Banner = () => {
         <div className="flex items-center justify-center w-full">
           <img className="w-32 h-12 " src={decorator} alt="" />
         </div>
-        <div className="text-center w-full text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-normal">
+        <div className="text-center w-full text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-normal">
           Explore Our Menu
         </div>
       </div>
-      <div className="overlay w-full h-full bg-black opacity-60 absolute"></div>
+      <div className="overlay w-full h-full bg-black opacity-65 absolute"></div>
     </div>
   );
 };

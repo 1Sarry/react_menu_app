@@ -37,7 +37,7 @@ const Drinks = () => {
   return (
     <div id="section3" className="py-20 flex justify-center">
       <div className="w-11/12 lg:w-3/4">
-        <h2 className="pb-10 text-center font-forum text-6xl">Drinks</h2>
+        <h2 className="pb-10 text-center font-forum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Drinks</h2>
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           pagination={{ clickable: true }}

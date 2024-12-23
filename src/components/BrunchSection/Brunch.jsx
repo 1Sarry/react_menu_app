@@ -24,9 +24,9 @@ const Brunch = () => {
   return (
     <div id="section2" className="bg-balck-custom py-20 flex justify-center items-center">
       <div className="w-11/12 lg:w-3/4">
-          <div className="title text-white pb-20 text-center font-forum text-6xl">
+          <h2 className="title text-white pb-20 text-center font-forum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             Brunch Menu List
-          </div>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {brunchItems?.map((item, index) => (
               <BrunchCard
