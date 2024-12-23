@@ -31,7 +31,8 @@ export default {
         'nav-bg':"#202020",
         'small-txt':'#F29422',
         'card-desc':'#a7a7a7',
-        'hover-color':'#e4c590'
+        'hover-color':'#e4c590',
+        'balck-custom':'#171819'
       }
     },
   },

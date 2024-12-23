@@ -34,7 +34,6 @@ const Header = () => {
     { name: "Salad", id: "section1" },
     { name: "Brunch", id: "section2" },
     { name: "Drinks", id: "section3" },
-    { name: "Lunch", id: "section4" },
   ];
   return (
     <header
@@ -67,33 +66,42 @@ const Header = () => {
           )}
         </div>
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          {navItems.map((item) => (
-            <ScrollLink
-              key={item.id}
-              to={item.id}
-              smooth={true}
-              duration={500}
-              spy={true}
-              activeClass="text-small-txt font-medium"
-              className="text-gray-100 hover:text-gray-300 cursor-pointer"
-            >
-              {item.name}
-            </ScrollLink>
-          ))}
+        <nav className="hidden md:flex items-center justify-center space-x-6 ">
+          <div>
+            {navItems.map((item) => (
+              <ScrollLink
+                key={item.id}
+                to={item.id}
+                smooth={true}
+                duration={500}
+                spy={true}
+                activeClass="text-small-txt font-medium"
+                className="text-gray-100 hover:text-small-txt cursor-pointer pr-10"
+              >
+                {item.name}
+              </ScrollLink>
+            ))}
+          </div>
+          <ScrollLink
+            to="footer"
+            smooth={true}
+            duration={500}
+            className="bg-yellow-400 text-black font-medium py-3 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
+          >
+            Order Now
+          </ScrollLink>
         </nav>
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${
+          className={`fixed top-0 right-0 h-full w-80 bg-black shadow-lg transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 md:hidden`}
         >
-          <div className="p-4">
+          <div className="p-4 ">
             <TfiClose
-              className="w-8 h-8 text-gray-800 cursor-pointer mb-4"
+              className="w-8 h-8 text-gray-500 cursor-pointer mb-10"
               onClick={toggleMenu}
             />
             <nav className="space-y-4">
-           
               {navItems.map((item) => (
                 <ScrollLink
                   key={item.id}
@@ -102,12 +110,22 @@ const Header = () => {
                   duration={500}
                   spy={true}
                   activeClass="text-small-txt font-medium"
-                  className="block border-b pb-2 text-gray-300 hover:text-gray-800"
+                  className="block border-b  pb-4 text-gray-300 hover:text-gray-800"
                   onClick={toggleMenu}
                 >
                   {item.name}
                 </ScrollLink>
               ))}
+              <div className="py-10">
+                <ScrollLink
+                  to="footer"
+                  smooth={true}
+                  duration={500}
+                  className="bg-yellow-400 text-black font-medium py-3 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
+                >
+                  Order Now
+                </ScrollLink>
+              </div>
             </nav>
           </div>
         </div>
