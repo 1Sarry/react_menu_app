@@ -44,7 +44,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-100 cursor-pointer">
-          <ScrollLink to="/">
+          <ScrollLink to="banner" smooth={true} duration={500}>
             {" "}
             <div className="flex gap-3 items-center">
               <img className="h-10 w-10" src={logoIcon} alt="" />
@@ -86,7 +86,7 @@ const Header = () => {
             to="footer"
             smooth={true}
             duration={500}
-            className="bg-yellow-400 text-black font-medium py-3 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
+            className="bg-yellow-400 text-black font-medium py-2 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
           >
             Order Now
           </ScrollLink>
@@ -121,7 +121,7 @@ const Header = () => {
                   to="footer"
                   smooth={true}
                   duration={500}
-                  className="bg-yellow-400 text-black font-medium py-3 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
+                  className="bg-yellow-400 text-black font-medium py-2 px-6 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition-transform transform hover:scale-105 active:scale-95 shadow-md cursor-pointer pl-10 text-center"
                 >
                   Order Now
                 </ScrollLink>

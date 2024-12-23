@@ -3,7 +3,7 @@ import "./Banner.scss";
 import decorator from "../../assets/Icons/Decorator.svg";
 const Banner = () => {
   return (
-    <div className="relative flex items-center flex-col text-white justify-center w-full h-[530px] md:h-banner-md lg:h-banner-lg banner text-center">
+    <div id="banner" className="relative flex items-center flex-col text-white justify-center w-full h-[530px] md:h-banner-md lg:h-banner-lg banner text-center">
       <div className="banner-content z-20 flex flex-col items-start justify-center">
         <div className="w-full font-bold text-xs sm:text-sm text-center text-small-txt tracking-wider uppercase">
           Taste the Difference

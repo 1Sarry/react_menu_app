@@ -22,7 +22,7 @@ const BrunchCard = ({ name, image, price, category }) => {
             </div>
           </div>
         </div>
-        <div className="brunch-price pl-4 text-small-txt">{price}</div>
+        <div className="brunch-price pl-4 text-small-txt font-semibold whitespace-nowrap">{price}</div>
       </div>
     </div>
   );

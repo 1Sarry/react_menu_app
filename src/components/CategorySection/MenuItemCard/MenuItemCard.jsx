@@ -24,7 +24,7 @@ const MenuItemCard = ({ image, name, desc, price }) => {
       <div className="category-desc text-sm max-w-[270px] text-center">
         {desc}
       </div>
-      <div className="category-price text-xl text-small-txt">{price}</div>
+      <div className="category-price text-xl text-small-txt font-semibold">{price}</div>
     </div>
   );
 };
